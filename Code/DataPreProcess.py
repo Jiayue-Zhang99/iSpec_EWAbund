@@ -27,14 +27,15 @@ except Exception:
 # ------------------------------------------------------------
 # iSpec import (keep absolute path)
 # ------------------------------------------------------------
-ispec_dir = "/Users/jiayue/iSpec/"
+from config import resolve_ispec_dir
+
+
+ispec_dir = resolve_ispec_dir()
 print("ispec_dir =", ispec_dir)
 sys.path.insert(0, os.path.abspath(ispec_dir))
 import ispec  # noqa
 
 logger = logging.getLogger(__name__)
-
-from userlist import target
 
 # ------------------------------------------------------------
 # 1) read/write spectrum (keep your original function)
