@@ -1,0 +1,18 @@
+[
+  {
+    "file": "HD73350_normalized.fits",
+    "source_file": "output/HD73350/spectra_HD73350_normalized_splines_segmts.fits",
+    "source_sha256": "09ec3899572fb1d04243ca4694564be46907f4e51a6e60d1bdfba05418fab1ef",
+    "sha256": "da4ffa4c07bdaeca5cccb4b146793b9f54d4186c4d57b68c1dd4c53be8a365b5",
+    "header_policy": "Minimal FITS header; spectral columns unchanged",
+    "resolution": 45500
+  },
+  {
+    "file": "Sun_MIKE_vesta_R45500_normalized.fits",
+    "source_file": "output/Sun/Sun_MIKE_vesta_R45500/Sun_MIKE_vesta_normed_segmts_R45500.fits",
+    "source_sha256": "6e0ffda591c5445930cb69b00baf4658346678546fe3ee212376d0e7a49b9e80",
+    "sha256": "9f13c25eb1e3657fbe5b69aca10c0e5f2ddf99c828c3d714f26d5bf78f182c2c",
+    "header_policy": "Minimal FITS header; spectral columns unchanged",
+    "resolution": 45500
+  }
+]

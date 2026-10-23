@@ -1,0 +1,27 @@
+# Local scientific data, runtime installations and results are never release inputs.
+/output/
+/input/spectra/
+/input/atmospheres/
+/input/abundances/
+/input/solar_*.csv
+/input/sun_atmos_*.csv
+/input/linelists/CCF
+/input/linelists/transitions/
+/input/linelists/turbospectrum/
+/input/regions/strong_lines
+/ispec
+/synthesizer
+/tools/linemake/
+/.runtime.json
+/.migration_backup/
+/dist/
+__pycache__/
+*.py[cod]
+*.log
+*.log.*
+.DS_Store
+.ipynb_checkpoints/
+.venv/
+.env
+.cursor/
+.codex/

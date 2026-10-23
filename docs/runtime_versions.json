@@ -1,0 +1,30 @@
+{
+  "python": "Python 3.13.5",
+  "ispec_base_commit": "502974867b3a3313f561a3aafb31b1336eba5026",
+  "python_packages": {
+    "numpy": "2.3.2",
+    "scipy": "1.16.1",
+    "pandas": "2.3.2",
+    "matplotlib": "3.10.6",
+    "astropy": "7.1.0",
+    "openpyxl": "3.1.5",
+    "lockfile": "0.12.2",
+    "Cython": "3.1.3",
+    "statsmodels": "0.14.5",
+    "dill": "0.4.0",
+    "h5py": "3.14.0",
+    "hdf5plugin": "5.1.0"
+  },
+  "q2_source_sha256": {
+    "specpars.py": "1a15a29dbae7863986a9a638e04f6e014c54499020c7f66ee62bbc9da760ff79",
+    "config.py": "a6234ad4fd86f6653c7fa6be8314ca960ee272000370cb0c793a1ca798a03677",
+    "tools.py": "0cc97991ad24008f4a4b4d75d162a8d8fc3fc5c5f8573bfa2f35a7ea61f03408",
+    "abundances.py": "9c5ce17732ae6825a68f888c130bc94bdc8d97abb8545032e3d6a7524734ded6",
+    "star.py": "8a1769270e1a3f764699ce31c65c0c38b66a2393795caa06de02c85b504c1345",
+    "__init__.py": "56464add4de0340ee0029d171f79a067794764bff292e760ed6ef63fab7a8afd",
+    "modatm.py": "794450f394b067f1c5ed1e9f22c11c49bbbd10926f31231f12717e7efa631123",
+    "isopars.py": "48945cf17dc4553616c1736432983606d059849a9d04445a02104514dacd56b6",
+    "moog.py": "20fb20a51cc1cf97dfafeff0edb643f36c489aea7862d670c71e5e662d04338f",
+    "errors.py": "60fbfe186f766baa264a9c2fa16507e48c5c88ecc594af8a333d0e072a07fc87"
+  }
+}

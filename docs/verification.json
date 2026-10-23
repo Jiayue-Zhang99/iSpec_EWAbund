@@ -1,0 +1,11 @@
+{
+  "run_3a_atmos_lbl.py": "--help passed",
+  "run_4a_ele_lbl.py": "--help passed",
+  "run_5_ele_plot.py": "--help passed",
+  "source_files_unchanged": true,
+  "example_arrays_identical": true,
+  "setup_idempotent": true,
+  "regression_tests": 61,
+  "regression_result": "passed",
+  "full_abundance_rerun": false
+}

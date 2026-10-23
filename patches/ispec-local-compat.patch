@@ -1,0 +1,57 @@
+diff --git a/ispec/__init__.py b/ispec/__init__.py
+index 893d8bf2..e3e83305 100644
+--- a/ispec/__init__.py
++++ b/ispec/__init__.py
+@@ -116,3 +116,4 @@ from .synth.grid import precompute_synthetic_grid
+ from .synth.grid import estimate_initial_ap
+ from . import log
+ import logging
++from .plotting import plot_spectra
+\ No newline at end of file
+diff --git a/ispec/abundances.py b/ispec/abundances.py
+index 81b89b5c..71c24389 100644
+--- a/ispec/abundances.py
++++ b/ispec/abundances.py
+@@ -547,21 +547,40 @@ def __moog_generic_determine_abundances(moog_executable, atmosphere_layers, teff
+     f = r"(?:[+-]?\d+\.\d+|NaN|[+-]?Inf)" # Float
+     atomic_line_pattern = re.compile(rf"^\s+({f})\s+(.*)\n$")
+     line_number = 0
++    n_masks = len(sorted_tmp_linemasks)
+     for i, line in enumerate(results_lines):
+         atomic_line = atomic_line_pattern.match(line)
+         if atomic_line:
+             values = list(map(float, line.split()))
+             # Make sure we recover the abundance for the good line by checking the wavelength
+             wave = values[0] # A
+-            while filtered[line_number] or np.abs(sorted_tmp_linemasks['wave_A'][line_number] - wave) > 0.001:
++            # Guard: wavelength mismatches or filtered lines can advance line_number to len(masks);
++            # MOOG may also emit lines that do not align with any remaining mask — avoid IndexError.
++            _wave_match_tol_a = 0.001
++            while line_number < n_masks and (
++                filtered[line_number]
++                or np.abs(sorted_tmp_linemasks["wave_A"][line_number] - wave) > _wave_match_tol_a
++            ):
+                 absolute_abund.append(np.nan)
+                 x_over_h.append(np.nan)
+                 if filtered[line_number]:
+                     #logging.warning("Missed line %.3f because of NaN equivalent width, not supported by MOOG or requested to be ignored" % (sorted_tmp_linemasks['wave_A'][line_number]))
+                     pass
+                 else:
+-                    logging.warning("Missed line %.3f" % (sorted_tmp_linemasks['wave_A'][line_number], wave))
++                    logging.warning(
++                        "Missed line linemask=%.3f Å vs MOOG sum=%.3f Å (mismatch > 0.001 Å)"
++                        % (sorted_tmp_linemasks["wave_A"][line_number], wave)
++                    )
+                 line_number += 1
++            if line_number >= n_masks:
++                logging.warning(
++                    "MOOG summary line at %.3f Å has no matching linemasks slot "
++                    "(end of sorted linemasks at index %d / %d); assigning NaN."
++                    % (wave, line_number, n_masks)
++                )
++                absolute_abund.append(np.nan)
++                x_over_h.append(np.nan)
++                continue
+             absolute_abund.append(values[-2])
+             #x_over_h.append(values[-1]) # This MOOG value is not consistent with absolute_abund - solar abundance
+             if reference_abund is None:

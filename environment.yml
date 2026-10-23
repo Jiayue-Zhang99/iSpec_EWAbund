@@ -1,0 +1,21 @@
+name: ispec-ewabund
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - pip
+  - numpy=2.3
+  - scipy=1.16
+  - pandas=2.3
+  - matplotlib=3.10
+  - astropy=7.1
+  - openpyxl=3.1
+  - jupyterlab=4
+  - nbformat=5
+  - cython=3
+  - statsmodels=0.14
+  - dill
+  - h5py
+  - pip:
+      - lockfile
+      - hdf5plugin

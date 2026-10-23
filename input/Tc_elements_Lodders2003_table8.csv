@@ -1,0 +1,84 @@
+Element,Tc_K,Initial_Phase,50%Tc_K,Major_Phase_or_Host
+H,182,H2O ice,,
+He,<3,He ice,,
+Li,,"Li4SiO4, Li2SiO3",1142,Forsterite + enstatite
+Be,,"BeCa2Si2O7",1452,Melilite
+B,,"CaB2Si2O8",908,Feldspar
+C,78,CH4·7H2O,40,CH4·7H2O + CH4 ice
+N,131,NH3·H2O,123,NH3·H2O
+O,182,Water ice,180,rock + water ice
+F,739,Ca5[PO4]3F,734,F apatite
+Ne,9.3,Ne ice,9.1,Ne ice
+Na,,"NaAlSi3O8",958,Feldspar
+Mg,1397,Spinel,1336,Forsterite
+Al,1677,Al2O3,1653,Hibonite
+Si,1529,Gehlenite,1310,Forsterite + enstatite
+P,1248,Fe3P,1229,Schreibersite
+S,704,FeS,664,Troilite
+Cl,954,Na4[Al3Si3O12]Cl,948,Sodalite
+Ar,48,Ar·6H2O,47,Ar·6H2O
+K,,"KAlSi3O8",1006,Feldspar
+Ca,1659,CaAl12O19,1517,Hibonite + gehlenite
+Sc,,"Sc2O3",1659,Hibonite
+Ti,1593,CaTiO3,1582,Titanate
+V,,"VO, V2O3",1429,Titanate
+Cr,,"Cr",1296,Fe alloy
+Mn,,"Mn2SiO4, MnSiO3",1158,Forsterite + enstatite
+Fe,1357,Fe metal,1334,Fe alloy
+Co,,"Co",1352,Fe alloy
+Ni,,"Ni",1353,Fe alloy
+Cu,,"Cu",1037,Fe alloy
+Zn,,"Zn2SiO4, ZnSiO3",726,Forsterite + enstatite
+Ga,,"Ga, Ga2O3",968,Fe alloy + feldspar
+Ge,,"Ge",883,Fe alloy
+As,,"As",1065,Fe alloy
+Se,,"FeSe0.96",697,Troilite
+Br,,"CaBr2",546,Cl apatite
+Kr,53,Kr·6H2O,52,Kr·6H2O
+Rb,,"Rb silicate",800,Feldspar
+Sr,,"SrTiO3",1464,Titanate
+Y,,"Y2O3",1659,Hibonite
+Zr,1764,ZrO2,1741,ZrO2
+Nb,,"NbO, NbO2",1559,Titanate
+Mo,,"Mo",1590,Refractory metal alloy
+Ru,,"Ru",1551,Refractory metal alloy
+Rh,,"Rh",1392,Refractory metal alloy
+Pd,,"Pd",1324,Fe alloy
+Ag,,"Ag",996,Fe alloy
+Cd,,"CdSiO3, CdS",652,Enstatite + troilite
+In,,"InS, InSe, InTe",536,FeS
+Sn,,"Sn",704,Fe alloy
+Sb,,"Sb",979,Fe alloy
+Te,,"Te",709,Fe alloy
+I,,"CaI2",535,Cl apatite
+Xe,69,Xe·6H2O,68,Xe·6H2O
+Cs,,"Cs silicate",799,Feldspar
+Ba,,"BaTiO3",1455,Titanate
+La,,"La2O3",1578,Hibonite + titanate
+Ce,,"CeO2, Ce2O3",1478,Hibonite + titanate
+Pr,,"Pr2O3",1582,Hibonite + titanate
+Nd,,"Nd2O3",1602,Hibonite
+Sm,,"Sm2O3",1590,Hibonite + titanate
+Eu,,"EuO, Eu2O3",1356,Hibonite + titanate + feldspar
+Gd,,"Gd2O3",1659,Hibonite
+Tb,,"Tb2O3",1659,Hibonite
+Dy,,"Dy2O3",1659,Hibonite
+Ho,,"Ho2O3",1659,Hibonite
+Er,,"Er2O3",1659,Hibonite
+Tm,,"Tm2O3",1659,Hibonite
+Yb,,"Yb2O3",1487,Hibonite + titanate
+Lu,,"Lu2O3",1659,Hibonite
+Hf,1703,HfO2,1684,HfO2
+Ta,,"Ta2O5",1573,Hibonite + titanate
+W,,"W",1789,Refractory metal alloy
+Re,,"Re",1821,Refractory metal alloy
+Os,,"Os",1812,Refractory metal alloy
+Ir,,"Ir",1603,Refractory metal alloy
+Pt,,"Pt",1408,Refractory metal alloy
+Au,,"Au",1060,Fe alloy
+Hg,,"HgS, HgSe, HgTe",252,Troilite
+Tl,,"Tl2S, Tl2Se, Tl2Te",532,Troilite
+Pb,,"Pb",727,Fe alloy
+Bi,,"Bi",746,Fe alloy
+Th,,"ThO2",1659,Hibonite
+U,,"UO2",1610,Hibonite
