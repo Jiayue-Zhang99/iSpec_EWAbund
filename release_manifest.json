@@ -143,8 +143,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 14188,
-      "sha256": "132e7833743632af3a153a94c9dde5dd670e2d75b055a67489cf2c5ae410c6ba"
+      "bytes": 14143,
+      "sha256": "2e94c653aefe8ebd5ed310d05ca32d240ccc382bade1e8ba2ec886a1a9322838"
     },
     {
       "path": "THIRD_PARTY.md",
@@ -155,11 +155,6 @@
       "path": "docs/DATA_FORMATS.md",
       "bytes": 4896,
       "sha256": "399068fdba237179bcb88b98f063466fdc6244c0a4383414758ac4df63ab7bd9"
-    },
-    {
-      "path": "docs/MIGRATION_20261022.md",
-      "bytes": 5811,
-      "sha256": "bca823cb3cf967f5eafcc4f28cf89c2edcab156d0db8991da1b54f187bfd281a"
     },
     {
       "path": "docs/runtime_versions.json",

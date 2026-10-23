@@ -1,6 +1,6 @@
 # iSpec_EWAbund
 
-[Data formats and outputs](docs/DATA_FORMATS.md) · [Release notes](docs/MIGRATION_20261022.md)
+[Data formats and outputs](docs/DATA_FORMATS.md)
 
 An equivalent-width pipeline for high-resolution spectra of solar-type stars. It combines iSpec preprocessing and EW measurements, q2 differential atmospheric parameters, iSpec/MOOG element abundances, selected HFS corrections, human line review, and uncertainty propagation. This release packages the working line-by-line workflow as of 2026-10-22.
 
@@ -125,7 +125,7 @@ Regression tests are separate from production code:
 PYTHONPATH=Code:. python -m unittest discover -s tests -v
 ```
 
-Tests require the configured runtime and installed sample metadata. QA HTTP tests bind localhost temporary ports. They exercise numerical/data contracts and review-state behavior; they do not reproduce the full solar and target analysis. The migration did not rerun human QA or replace the author's scientific results. See release notes for the actual checks performed.
+Tests require the configured runtime and installed sample metadata. QA HTTP tests bind localhost temporary ports. They exercise numerical/data contracts and review-state behavior; they do not reproduce the full solar and target analysis. The migration did not rerun human QA or replace the author's scientific results. See docs/verification.json for the checks performed.
 
 If a run fails, first check file paths and units, solar instrument/resolution selection, external grids/executables, and whether the preceding step produced its required output. Unknown uncertainties should remain visible as missing values. A small internal error bar is not evidence that normalization, resolution, blends, or the atmosphere model are free of systematics.
 
